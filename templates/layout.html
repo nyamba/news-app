@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block head %}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{% block title%}{% endblock%}</title>
+        <link rel="stylesheet" href="/static/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		{% endblock %}
+	</head>
+	<body>
+		<div class="nav-bar">News Application</div>
+		<div id="content">
+			{% block content %} {% endblock %}
+		</div>
+	</body>
+</html>
